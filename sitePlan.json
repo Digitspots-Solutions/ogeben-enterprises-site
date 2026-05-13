@@ -1,0 +1,49 @@
+{
+  "businessName": "Ogeben Enterprises",
+  "industry": "Manufacturing",
+  "tone": "professional",
+  "tagline": "Excellence in Manufacturing, Delivered with Precision",
+  "sections": [
+    {
+      "id": "hero",
+      "name": "Hero",
+      "copy": "Welcome to Ogeben Enterprises - Your trusted manufacturing partner in Port Harcourt. We deliver quality products with precision engineering and unwavering commitment to excellence.",
+      "imagePrompt": "Modern industrial manufacturing facility in Port Harcourt, Nigeria, with clean production lines, workers in safety gear operating precision machinery, bright natural lighting through large windows, professional industrial photography, high quality manufacturing environment, Nigerian factory setting",
+      "layout": "centered"
+    },
+    {
+      "id": "about",
+      "name": "About Us",
+      "copy": "Ogeben Enterprises is a leading manufacturing company based in Obio Akpor, Port Harcourt. Located at No 2 KINIKA Road, Ogborogbo Town, we have built our reputation on delivering superior manufactured products that meet the highest industry standards.\n\nOur state-of-the-art facility combines modern manufacturing techniques with skilled craftsmanship to produce reliable, durable products for our valued clients across Nigeria. We are committed to quality control, timely delivery, and exceptional customer service in every project we undertake.",
+      "imagePrompt": "Professional Nigerian manufacturing plant exterior, modern industrial building in Port Harcourt with company signage, well-maintained facility grounds, blue sky, daytime photography, corporate industrial architecture, Rivers State Nigeria setting",
+      "layout": "split"
+    },
+    {
+      "id": "services",
+      "name": "Our Manufacturing Capabilities",
+      "copy": "At Ogeben Enterprises, we offer comprehensive manufacturing solutions tailored to meet diverse industrial needs:\n\n**Custom Manufacturing** - We provide bespoke manufacturing services designed to your exact specifications, ensuring every product meets your unique requirements.\n\n**Quality Assurance** - Our rigorous quality control processes guarantee that every item leaving our facility meets international standards and exceeds customer expectations.\n\n**Industrial Production** - With advanced machinery and experienced personnel, we handle both small-batch and large-scale production runs efficiently.\n\n**Product Development** - From concept to completion, we work closely with clients to develop and manufacture innovative solutions for their business needs.\n\n**Supply Chain Integration** - We ensure seamless integration with your supply chain, providing reliable delivery schedules and consistent product quality.",
+      "imagePrompt": "Close-up of precision manufacturing process in Nigerian factory, skilled workers' hands operating industrial equipment, sparks flying from welding or cutting metal, detailed industrial work, professional manufacturing photography, high-tech production environment",
+      "layout": "grid"
+    },
+    {
+      "id": "why-choose-us",
+      "name": "Why Choose Ogeben Enterprises",
+      "copy": "**Proven Track Record** - Years of manufacturing excellence serving businesses across Port Harcourt and beyond.\n\n**Advanced Equipment** - We invest in modern manufacturing technology to ensure precision and efficiency in every project.\n\n**Skilled Workforce** - Our team of experienced engineers and technicians brings expertise and dedication to every production run.\n\n**Local Expertise** - Based in Obio Akpor, we understand the Nigerian market and provide solutions that work for local and international clients.\n\n**Competitive Pricing** - Quality manufacturing doesn't have to break the bank. We offer competitive rates without compromising on standards.\n\n**Timely Delivery** - We respect deadlines and ensure your products are manufactured and delivered on schedule.",
+      "imagePrompt": "Team of Nigerian manufacturing professionals in safety gear standing proudly in front of industrial machinery, diverse group of workers and engineers, modern factory background, professional team portrait, industrial setting in Port Harcourt, confident and capable workforce",
+      "layout": "cards"
+    },
+    {
+      "id": "contact",
+      "name": "Get In Touch",
+      "copy": "Ready to discuss your manufacturing needs? Contact Ogeben Enterprises today and let us help bring your production requirements to life.\n\n**Visit Our Facility:**\nNo 2 KINIKA Road, Ogborogbo Town\nObio Akpor, Port Harcourt\nRivers State, Nigeria\n\n**Call Us:**\n+234 803 741 5174\n\n**Business Hours:**\nMonday - Friday: 8:00 AM - 5:00 PM\nSaturday: 9:00 AM - 2:00 PM\n\nWe look forward to partnering with you for all your manufacturing needs.",
+      "imagePrompt": "Professional Nigerian customer service representative in manufacturing office setting, person wearing business attire holding phone and smiling, modern office with industrial background visible through window, welcoming atmosphere, Port Harcourt business environment",
+      "layout": "split"
+    }
+  ],
+  "contact": {
+    "phone": "+234 803 741 5174",
+    "email": "info@ogebenenterprises.com",
+    "address": "No 2 KINIKA Road, Ogborogbo Town, Obio Akpor, Port Harcourt, Rivers State, Nigeria",
+    "whatsapp": "https://wa.me/2348037415174"
+  }
+}
