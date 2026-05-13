@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ogeben Enterprises - Excellence in Manufacturing, Delivered with Precision</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-primary: #07080e;
+            --color-accent: #f1732f;
+            --color-bg: #F2EDE6;
+            --color-text: #0D1117;
+            --color-surface: #192330;
+            --color-secondary-accent: #9cb6be;
+            --font-display: 'Barlow Condensed', sans-serif;
+            --font-body: 'IBM Plex Sans', sans-serif;
+            --border-radius: 0px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text);
+            background-color: var(--color-bg);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-display);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(24px);
+            }
+            to {
+                opacity: 1;
+                transform: none;
+            }
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(7, 8, 14, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 1rem 2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 800;
+            color: var(--color-accent);
+            font-family: var(--font-display);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-accent);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+            gap: 4px;
+        }
+
+        .mobile-menu-btn span {
+            width: 25px;
+            height: 3px;
+            background: var(--color-accent);
+            transition: all 0.3s ease;
+            transform-origin: center;
+        }
+
+        .mobile-menu-btn.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .mobile-menu-btn.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .mobile-menu-btn.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        .mobile-menu {
+            position: fixed;
+            top: 70px;
+            right: -100%;
+            width: 300px;
+            height: calc(100vh - 70px);
+            background: var(--color-surface);
+            box-shadow: -2px 0 10px rgba(0, 0, 0, 0.3);
+            transition: right 0.3s ease;
+            z-index: 999;
+            padding: 2rem;
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+        }
+
+        .mobile-menu ul li {
+            margin-bottom: 1.5rem;
+        }
+
+        .mobile-menu ul a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            display: block;
+            padding: 0.5rem 0;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .mobile-menu ul a:hover {
+            color: var(--color-accent);
+        }
+
+        /* Hero Section */
+        #hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            overflow: hidden;
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        .hero-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 1;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+            z-index: 2;
+        }
+
+        .hero-blueprint {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0h100v100H0z' fill='none'/%3E%3Cpath d='M0 50h100M50 0v100' stroke='%23fff' stroke-width='0.5' opacity='0.08'/%3E%3C/svg%3E");
+            background-size: 100px 100px;
+            z-index: 3;
+            opacity: 0.08;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 4;
+            max-width: 1200px;
+            padding: 0 2rem;
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.1;
+            text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-tagline {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-accent);
+            font-weight: 600;
+            font-family: var(--font-display);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .hero-text {
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--color-accent);
+            color: #fff;
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-family: var(--font-display);
+            box-shadow: 4px 4px 0 var(--color-primary);
+        }
+
+        .cta-button:hover {
+            transform: translate(2px, 2px);
+            box-shadow: 2px 2px 0 var(--color-primary);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 80px 2rem;
+            animation: fadeUp 0.6s ease forwards;
+        }
+
+        section:nth-child(2) { animation-delay: 0.1s; }
+        section:nth-child(3) { animation-delay: 0.2s; }
+        section:nth-child(4) { animation-delay: 0.3s; }
+        section:nth-child(5) { animation-delay: 0.4s; }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary);
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 80px;
+            height: 4px;
+            background: var(--color-accent);
+        }
+
+        /* About Section */
+        #about {
+            background: var(--color-surface);
+            color: #fff;
+        }
+
+        #about .section-title {
+            color: #fff;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .about-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            box-shadow: 8px 8px 0 var(--color-accent);
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            font-weight: 300;
+        }
+
+        .about-text p {
+            margin-bottom: 1.5rem;
+        }
+
+        /* Services Section */
+        #services {
+            background: var(--color-bg);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .service-card {
+            background: var(--color-surface);
+            padding: 2rem;
+            color: #fff;
+            box-shadow: 6px 6px 0 var(--color-primary);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 8px 8px 0 var(--color-primary);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--color-accent);
+        }
+
+        .service-card p {
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        /* Why Choose Us Section */
+        #why-choose-us {
+            background: var(--color-surface);
+            color: #fff;
+        }
+
+        #why-choose-us .section-title {
+            color: #fff;
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .why-card {
+            background: var(--color-primary);
+            padding: 2rem;
+            border-left: 4px solid var(--color-accent);
+        }
+
+        .why-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.75rem;
+            color: var(--color-accent);
+        }
+
+        .why-card p {
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: var(--color-bg);
+        }
+
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .contact-image {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            box-shadow: 8px 8px 0 var(--color-accent);
+        }
+
+        .contact-info {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .contact-info p {
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .contact-info strong {
+            color: var(--color-accent);
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 1.2rem;
+            font-family: var(--font-display);
+            text-transform: uppercase;
+        }
+
+        .contact-info a {
+            color: var(--color-primary);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: var(--color-accent);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-primary);
+            color: #fff;
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background: #25D366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 6px 6px 16px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: flex;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-tagline {
+                font-size: 1.2rem;
+            }
+
+            .hero-text {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 48px 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-image,
+            .contact-image {
+                height: 300px;
+            }
+
+            .services-grid,
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .whatsapp-float {
+                width: 50px;
+                height: 50px;
+                font-size: 1.5rem;
+                bottom: 20px;
+                right: 20px;
+            }
+        }
+
+        @media (max-width: 1024px) and (min-width: 769px) {
+            .hero-content h1 {
+                font-size: 3rem;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .why-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">OGEBEN ENTERPRISES</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#why-choose-us">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#why-choose-us">Why Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <img src="https://images.pexels.com/photos/12069465/pexels-photo-12069465.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Manufacturing Facility" class="hero-bg">
+        <div class="hero-overlay"></div>
+        <div class="hero-blueprint"></div>
+        <div class="hero-content">
+            <h1>OGEBEN ENTERPRISES</h1>
+            <p class="hero-tagline">Excellence in Manufacturing, Delivered with Precision</p>
+            <p class="hero-text">Welcome to Ogeben Enterprises - Your trusted manufacturing partner in Port Harcourt. We deliver quality products with precision engineering and unwavering commitment to excellence.</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Us</h2>
+            <div class="about-content">
+                <img src="https://images.pexels.com/photos/10546018/pexels-photo-10546018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Ogeben Enterprises Facility" class="about-image">
+                <div class="about-text">
+                    <p>Ogeben Enterprises is a leading manufacturing company based in Obio Akpor, Port Harcourt. Located at No 2 KINIKA Road, Ogborogbo Town, we have built our reputation on delivering superior manufactured products that meet the highest industry standards.</p>
+                    <p>Our state-of-the-art facility combines modern manufacturing techniques with skilled craftsmanship to produce reliable, durable products for our valued clients across Nigeria. We are committed to quality control, timely delivery, and exceptional customer service in every project we undertake.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Manufacturing Capabilities</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Custom Manufacturing</h3>
+                    <p>We provide bespoke manufacturing services designed to your exact specifications, ensuring every product meets your unique requirements.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Quality Assurance</h3>
+                    <p>Our rigorous quality control processes guarantee that every item leaving our facility meets international standards and exceeds customer expectations.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Industrial Production</h3>
+                    <p>With advanced machinery and experienced personnel, we handle both small-batch and large-scale production runs efficiently.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Product Development</h3>
+                    <p>From concept to completion, we work closely with clients to develop and manufacture innovative solutions for their business needs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Supply Chain Integration</h3>
+                    <p>We ensure seamless integration with your supply chain, providing reliable delivery schedules and consistent product quality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us">
+        <div class="container">
+            <h2 class="section-title">Why Choose Ogeben Enterprises</h2>
+            <div class="why-grid">
+                <div class="why-card">
+                    <h3>Proven Track Record</h3>
+                    <p>Years of manufacturing excellence serving businesses across Port Harcourt and beyond.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Advanced Equipment</h3>
+                    <p>We invest in modern manufacturing technology to ensure precision and efficiency in every project.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Skilled Workforce</h3>
+                    <p>Our team of experienced engineers and technicians brings expertise and dedication to every production run.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Local Expertise</h3>
+                    <p>Based in Obio Akpor, we understand the Nigerian market and provide solutions that work for local and international clients.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Competitive Pricing</h3>
+                    <p>Quality manufacturing doesn't have to break the bank. We offer competitive rates without compromising on standards.</p>
+                </div>
+                <div class="why-card">
+                    <h3>Timely Delivery</h3>
+                    <p>We respect deadlines and ensure your products are manufactured and delivered on schedule.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>Ready to discuss your manufacturing needs? Contact Ogeben Enterprises today and let us help bring your production requirements to life.</p>
+                    
+                    <strong>Visit Our Facility:</strong>
+                    <p>No 2 KINIKA Road, Ogborogbo Town<br>
+                    Obio Akpor, Port Harcourt<br>
+                    Rivers State, Nigeria</p>
+                    
+                    <strong>Call Us:</strong>
+                    <p><a href="tel:+2348037415174">+234 803 741 5174</a></p>
+                    
+                    <strong>Email:</strong>
+                    <p><a href="mailto:info@ogebenenterprises.com">info@ogebenenterprises.com</a></p>
+                    
+                    <strong>Business Hours:</strong>
+                    <p>Monday - Friday: 8:00 AM - 5:00 PM<br>
+                    Saturday: 9:00 AM - 2:00 PM</p>
+                    
+                    <p>We look forward to partnering with you for all your manufacturing needs.</p>
+                </div>
+                <img src="https://images.pexels.com/photos/5453838/pexels-photo-5453838.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Contact Ogeben Enterprises" class="contact-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Ogeben Enterprises. All Rights Reserved.</p>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/2348037415174" class="whatsapp-float" target="_blank" aria-label="Chat on WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 0C7.163 0 0 7.163 0 16c0 2.828.739 5.489 2.026 7.824L.057 30.867l7.298-1.915A15.915 15.915 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333c-2.548 0-5-.703-7.12-1.984l-.512-.304-5.296 1.389 1.413-5.169-.333-.53A13.263 13.263 0 012.667 16c0-7.364 5.97-13.333 13.333-13.333S29.333 8.636 29.333 16 23.364 29.333 16 29.333z" fill="white"/>
+            <path d="M12.049 9.467c-.254-.567-.521-.578-.762-.589-.198-.009-.424-.008-.65-.008-.227 0-.595.085-.906.424-.311.34-1.187 1.159-1.187 2.825 0 1.667 1.215 3.277 1.384 3.504.17.226 2.333 3.708 5.771 5.045 2.859 1.112 3.44.891 4.06.835.621-.057 2.004-.819 2.286-1.61.283-.79.283-1.468.198-1.61-.085-.141-.311-.226-.65-.396-.34-.17-2.004-.989-2.314-1.103-.31-.113-.537-.17-.762.17-.226.339-.876 1.103-1.073 1.33-.198.225-.396.254-.735.084-.34-.17-1.433-.528-2.731-1.685-1.009-.9-1.691-2.012-1.889-2.351-.197-.34-.021-.523.149-.692.153-.153.34-.396.51-.594.17-.197.226-.339.339-.565.113-.227.057-.424-.028-.594-.085-.17-.762-1.836-1.044-2.513z" fill="white"/>
+        </svg>
+    </a>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mobileMenu = document.querySelector('.mobile-menu');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenuBtn.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+            });
+
+            // Close mobile menu when clicking a link
+            const mobileLinks = mobileMenu.querySelectorAll('a');
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenuBtn.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                });
+            });
+        }
+    </script>
+</body>
+</html>
