@@ -1,49 +1,42 @@
 {
-  "businessName": "Ogeben Enterprises",
-  "industry": "Manufacturing",
-  "tone": "professional",
-  "tagline": "Excellence in Manufacturing, Delivered with Precision",
+  "businessName": "Jubilee Oven Confectionery Limited",
+  "industry": "FoodTech & Confectionery",
+  "tone": "warm, inviting, modern",
+  "tagline": "Where Technology Meets Sweet Perfection",
   "sections": [
     {
       "id": "hero",
       "name": "Hero",
-      "copy": "Welcome to Ogeben Enterprises - Your trusted manufacturing partner in Port Harcourt. We deliver quality products with precision engineering and unwavering commitment to excellence.",
-      "imagePrompt": "Modern industrial manufacturing facility in Port Harcourt, Nigeria, with clean production lines, workers in safety gear operating precision machinery, bright natural lighting through large windows, professional industrial photography, high quality manufacturing environment, Nigerian factory setting",
+      "copy": "Welcome to Jubilee Oven Confectionery Limited – Port Harcourt's premier destination for artisan confections and innovative sweet treats. Experience the perfect blend of traditional baking excellence and modern food technology, delivering delightful pastries, cakes, and confectioneries that make every moment special.",
+      "imagePrompt": "Photorealistic wide shot of an elegant modern Nigerian bakery display counter with beautiful layered cakes, colorful cupcakes, artisan pastries, and confectioneries arranged on marble countertops, warm ambient lighting, professional food photography, Port Harcourt upscale bakery aesthetic, inviting atmosphere with customers in background",
       "layout": "centered"
     },
     {
       "id": "about",
       "name": "About Us",
-      "copy": "Ogeben Enterprises is a leading manufacturing company based in Obio Akpor, Port Harcourt. Located at No 2 KINIKA Road, Ogborogbo Town, we have built our reputation on delivering superior manufactured products that meet the highest industry standards.\n\nOur state-of-the-art facility combines modern manufacturing techniques with skilled craftsmanship to produce reliable, durable products for our valued clients across Nigeria. We are committed to quality control, timely delivery, and exceptional customer service in every project we undertake.",
-      "imagePrompt": "Professional Nigerian manufacturing plant exterior, modern industrial building in Port Harcourt with company signage, well-maintained facility grounds, blue sky, daytime photography, corporate industrial architecture, Rivers State Nigeria setting",
+      "copy": "Jubilee Oven Confectionery Limited (also known as Jubilee Oven Sweet Treats Co) is a leading FoodTech confectionery business based in Obio Akpor, Port Harcourt. Operated by experienced restaurant technology professionals, we combine cutting-edge food preparation techniques with time-honored baking traditions to create exceptional sweet treats that delight our customers.\n\nFrom our location at No 2 KINIKA Road, Ogborogbo Town, we serve Port Harcourt and surrounding communities with premium cakes, pastries, bread, and confectioneries made fresh daily. Our commitment to quality ingredients, innovative recipes, and customer satisfaction has made us a trusted name in Rivers State's thriving food scene.\n\nWhether you're celebrating a special occasion, hosting an event, or simply treating yourself, Jubilee Oven delivers sweetness with every bite.",
+      "imagePrompt": "Photorealistic interior of a modern Nigerian bakery kitchen with professional bakers in clean uniforms working, stainless steel equipment, fresh ingredients on prep tables, natural lighting through large windows, Port Harcourt setting, authentic Nigerian bakery atmosphere, spotless professional environment",
       "layout": "split"
     },
     {
       "id": "services",
-      "name": "Our Manufacturing Capabilities",
-      "copy": "At Ogeben Enterprises, we offer comprehensive manufacturing solutions tailored to meet diverse industrial needs:\n\n**Custom Manufacturing** - We provide bespoke manufacturing services designed to your exact specifications, ensuring every product meets your unique requirements.\n\n**Quality Assurance** - Our rigorous quality control processes guarantee that every item leaving our facility meets international standards and exceeds customer expectations.\n\n**Industrial Production** - With advanced machinery and experienced personnel, we handle both small-batch and large-scale production runs efficiently.\n\n**Product Development** - From concept to completion, we work closely with clients to develop and manufacture innovative solutions for their business needs.\n\n**Supply Chain Integration** - We ensure seamless integration with your supply chain, providing reliable delivery schedules and consistent product quality.",
-      "imagePrompt": "Close-up of precision manufacturing process in Nigerian factory, skilled workers' hands operating industrial equipment, sparks flying from welding or cutting metal, detailed industrial work, professional manufacturing photography, high-tech production environment",
+      "name": "Our Services",
+      "copy": "**Custom Celebration Cakes**\nBeautifully designed birthday cakes, wedding cakes, and anniversary cakes customized to your exact specifications. From elegant tiered designs to fun themed creations, we bring your vision to life.\n\n**Fresh Daily Pastries**\nStart your day right with our selection of fresh croissants, meat pies, sausage rolls, doughnuts, and Nigerian favorites – all baked fresh every morning.\n\n**Corporate & Event Catering**\nProfessional confectionery services for corporate events, weddings, birthdays, and special occasions. We handle orders of any size with efficiency and excellence.\n\n**Artisan Bread & Confectionery**\nPremium bread varieties, cookies, brownies, chin-chin, and specialty confections made with quality ingredients and authentic recipes.\n\n**Online Ordering & Delivery**\nConveniently order through our modern platform and enjoy reliable delivery across Port Harcourt. Technology-driven service that respects your time.\n\n**Baking Classes & Workshops**\nLearn from our expert bakers in hands-on classes covering cake decoration, pastry techniques, and confectionery fundamentals.",
+      "imagePrompt": "Photorealistic flat lay grid of various Nigerian bakery products including decorated celebration cake, meat pies, doughnuts, chin-chin in bowls, fresh bread loaves, colorful cupcakes, all arranged on rustic wooden surface with natural lighting, professional food photography, vibrant colors, appetizing presentation",
       "layout": "grid"
     },
     {
-      "id": "why-choose-us",
-      "name": "Why Choose Ogeben Enterprises",
-      "copy": "**Proven Track Record** - Years of manufacturing excellence serving businesses across Port Harcourt and beyond.\n\n**Advanced Equipment** - We invest in modern manufacturing technology to ensure precision and efficiency in every project.\n\n**Skilled Workforce** - Our team of experienced engineers and technicians brings expertise and dedication to every production run.\n\n**Local Expertise** - Based in Obio Akpor, we understand the Nigerian market and provide solutions that work for local and international clients.\n\n**Competitive Pricing** - Quality manufacturing doesn't have to break the bank. We offer competitive rates without compromising on standards.\n\n**Timely Delivery** - We respect deadlines and ensure your products are manufactured and delivered on schedule.",
-      "imagePrompt": "Team of Nigerian manufacturing professionals in safety gear standing proudly in front of industrial machinery, diverse group of workers and engineers, modern factory background, professional team portrait, industrial setting in Port Harcourt, confident and capable workforce",
-      "layout": "cards"
-    },
-    {
       "id": "contact",
-      "name": "Get In Touch",
-      "copy": "Ready to discuss your manufacturing needs? Contact Ogeben Enterprises today and let us help bring your production requirements to life.\n\n**Visit Our Facility:**\nNo 2 KINIKA Road, Ogborogbo Town\nObio Akpor, Port Harcourt\nRivers State, Nigeria\n\n**Call Us:**\n+234 803 741 5174\n\n**Business Hours:**\nMonday - Friday: 8:00 AM - 5:00 PM\nSaturday: 9:00 AM - 2:00 PM\n\nWe look forward to partnering with you for all your manufacturing needs.",
-      "imagePrompt": "Professional Nigerian customer service representative in manufacturing office setting, person wearing business attire holding phone and smiling, modern office with industrial background visible through window, welcoming atmosphere, Port Harcourt business environment",
-      "layout": "split"
+      "name": "Contact Us",
+      "copy": "Ready to satisfy your sweet cravings? Visit us, call, or message us on WhatsApp to place your order today.\n\n**Visit Our Bakery:**\nNo 2 KINIKA Road, Ogborogbo Town\nObio Akpor, Port Harcourt, Rivers State\n\n**Call or WhatsApp:**\n+234 803 741 5174\n\n**Business Hours:**\nMonday - Saturday: 7:00 AM - 8:00 PM\nSunday: 9:00 AM - 6:00 PM\n\nFor bulk orders, event catering, or custom cake inquiries, please contact us at least 48 hours in advance. Same-day orders available for select items while supplies last.\n\nFollow us on social media for daily specials, new product launches, and exclusive promotions. We look forward to serving you!",
+      "imagePrompt": "Photorealistic exterior shot of a modern Nigerian bakery storefront in Port Harcourt, welcoming entrance with glass doors, visible display window showing cakes and pastries, professional signage, clean paved walkway, tropical Nigerian environment with palm trees, bright daylight, inviting atmosphere",
+      "layout": "default"
     }
   ],
   "contact": {
     "phone": "+234 803 741 5174",
-    "email": "info@ogebenenterprises.com",
-    "address": "No 2 KINIKA Road, Ogborogbo Town, Obio Akpor, Port Harcourt, Rivers State, Nigeria",
+    "email": "orders@jubileeoven.com",
+    "address": "No 2 KINIKA Road, Ogborogbo Town, Obio Akpor, Port Harcourt, Rivers State",
     "whatsapp": "https://wa.me/2348037415174"
   }
 }
